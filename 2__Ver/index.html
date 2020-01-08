@@ -35,9 +35,16 @@
 				<div class="grid grid-2">
 				<input id="surah" type="text" placeholder="Surah Number" required onkeyup="chkVals()">
 
-        <select class="form-control form-control-lg">
-        <option>Large select</option>
-        </select>
+        <select class="select2-bg form-control" id="bg-select" data-bgcolor="success"
+          data-bgcolor-variation="lighten-3" data-text-color="white">
+          <optgroup label="Alaskan/Hawaiian Time Zone">
+            <option value="AK">Alaska</option>
+            <option value="HI">Hawaii</option>
+          </optgroup>
+          </select>
+
+
+
 
 				</div>
 				</li>
@@ -47,6 +54,12 @@
 				<input id="ayaFrm" type="text" placeholder="Ayah (From)" required onkeyup="chkVals()">
 				</div>
 				</li>
+
+        <li>
+        <div class="grid grid-2">
+        <input id="ayaFrm" type="select" placeholder="Ayah (From)" required onkeyup="chkVals()">
+        </div>
+        </li>
 
 				<li>
 				<div class="grid grid-2">
